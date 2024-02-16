@@ -4,11 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Fade out #centeredTitle as you scroll down
     new ScrollMagic.Scene({
-        triggerElement: "#slide1", // trigger animation when this element is in view
         duration: "50%" // the animation will last for 50% of the viewport height
     })
     .setTween("#centeredTitle", {opacity: 0}) // fade out the #centeredTitle element
     .addTo(controller); // add the scene to the controller
+
+
+
 
     // Fade in #centeredText as you continue to scroll down
     new ScrollMagic.Scene({
@@ -18,6 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
     .setTween("#centeredText", {opacity: 1}) // fade in the #centeredText element
     .addTo(controller); // add the scene to the controller
 
+
+
+    
     // Function to re-enable scrolling
     function enableScrolling() {
         console.log("Scrolling enabled");

@@ -34,6 +34,10 @@ body {
     opacity: 0; /* Start as transparent */
 }
 
-spacer {
-    height: 100px;
+.spacer {
+    height: 25vh;
+}
+
+.slide {
+    height: 100vh;
 }
