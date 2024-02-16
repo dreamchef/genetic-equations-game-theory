@@ -1,0 +1,52 @@
+<%- include('../partials/header'); %>
+<body style="background-color: #0090DE;">
+    <div id="pageHeader" class="container text-center">
+        <h1 style="margin: 1%;">Video</h1>
+    </div>
+
+    <div class="container text-center">
+        <h2 style="margin: 1%;">3D Animation & Motion Graphics</h2>
+    </div>
+    <div class="container d-flex flex-wrap justify-content-center">
+        <% for(var i = 0; i < motionGraphicsIds.length; i++) { %>
+            <% video = motionGraphicsIds[i];%>
+            <% vsource = "https://www.youtube.com/embed/" + video.snippet.resourceId.videoId; %>
+            <% console.log(vsource); %>
+            <div class="card video-card">
+                    <iframe class="youtube-iframe" src="<%= vsource %>" frameborder="0" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+        <% } %>
+    </div>
+
+    <div class="container text-center">
+        <h2 style="margin: 1%;">Information Technology Tutorials</h2>
+    </div>
+    <div class="container d-flex flex-wrap justify-content-center">
+        <% var video, vsource; %>
+        <% for(var i = 0; i < GuideWareIds.length-1; i++) { %>
+            <% video = GuideWareIds[i];%>
+            <% vsource = "https://www.youtube.com/embed/" + video.id.videoId; %>
+            <% console.log(vsource); %>
+            <div class="card video-card">
+                    <iframe class="youtube-iframe" src="<%= vsource %>" frameborder="0" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+        <% } %>
+    </div>
+
+    <div class="container text-center">
+        <h2 style="margin: 1%;">Live-Action Sketches</h2>
+    </div> 
+    <div class="container d-flex flex-wrap justify-content-center">
+        <% for(var i = 0; i < liveActionIds.length; i++) { %>
+        <% video = liveActionIds[i];%>
+        <% vsource = "https://www.youtube.com/embed/" + video.snippet.resourceId.videoId; %>
+        <% console.log(vsource); %>
+        <div class="card video-card">
+                <iframe class="youtube-iframe" src="<%= vsource %>" frameborder="0" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <% } %>
+    </div>
+    
+    <%- include('../partials/footer'); %>

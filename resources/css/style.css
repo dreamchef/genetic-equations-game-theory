@@ -1,0 +1,72 @@
+h1,h2 {
+    color: white;
+}
+
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0.783);
+}
+
+.video-card {
+    background-color: black;
+    width: 50vh; 
+    height: 30vh; 
+    margin: 1%; 
+}
+
+a {
+    color: #0090de;
+    opacity: 1;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+.mynavbar {
+    height: 50px;
+}
+
+.landing {
+    background-image: url("/resources/img/background.jpg");
+    background-size: cover;
+    background-position-x: center;
+}
+
+.song-card {
+    width: 50vh; 
+    height: 50vh; 
+    margin: 0 1% 80px 1%; 
+    background-size: cover;
+    position: relative;
+}
+
+audio {
+    position: absolute;
+    bottom: 0px;
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+.youtube-iframe {
+    width: 100%; 
+    height: 100%;
+    padding: 2%;
+}
+
+.col {
+    text-align: center;
+}
+
+.banner-headline {
+    font-size: 3.33rem;
+    line-height: 2.5rem;
+    color: #e9e1cd;
+}
+
+.banner {
+    font-size: 5rem;
+    line-height: 4rem;
+    color: #ccbb8e;
+}
