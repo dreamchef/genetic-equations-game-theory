@@ -1,72 +1,39 @@
-h1,h2 {
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
     color: white;
+    overflow: hidden;
 }
 
-.jumbotron {
-    background-color: rgba(255, 255, 255, 0.783);
+#centeredTitle, #centeredText {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    opacity: 0; /* Start titles and text as invisible */
 }
 
-.video-card {
-    background-color: black;
-    width: 50vh; 
-    height: 30vh; 
-    margin: 1%; 
-}
-
-a {
-    color: #0090de;
+#centeredTitle {
+    font-size: 4rem; /* Larger font size for the main title */
     opacity: 1;
 }
 
-h3 {
-    font-size: 28px;
-}
-
-.mynavbar {
-    height: 50px;
-}
-
-.landing {
-    background-image: url("/resources/img/background.jpg");
-    background-size: cover;
-    background-position-x: center;
-}
-
-.song-card {
-    width: 50vh; 
-    height: 50vh; 
-    margin: 0 1% 80px 1%; 
-    background-size: cover;
-    position: relative;
-}
-
-audio {
-    position: absolute;
-    bottom: 0px;
-}
-
-.card-img-top {
-    border-radius: 0;
-}
-
-.youtube-iframe {
-    width: 100%; 
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    padding: 2%;
+    background-color: black; /* Final background color */
+    opacity: 0; /* Start as transparent */
 }
 
-.col {
-    text-align: center;
-}
-
-.banner-headline {
-    font-size: 3.33rem;
-    line-height: 2.5rem;
-    color: #e9e1cd;
-}
-
-.banner {
-    font-size: 5rem;
-    line-height: 4rem;
-    color: #ccbb8e;
+spacer {
+    height: 100px;
 }

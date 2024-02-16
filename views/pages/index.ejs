@@ -1,20 +1,49 @@
-  <%- include('../partials/header'); %>
-  </head>
-  <body class="landing">
-    <div class="container h-100">
-      <div class="row align-items-center h-100">
-          <div class="mx-auto text-center">
-            <div style="background-color: rgba(0, 0, 0, 0.85); color: white; padding: 2rem;">
-              <div>
-                <div class="banner-headline"> 
-                  Daniel Aloysius Lisle
-                </div> 
-                <div class="banner">
-                  DREAMCHEF
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Include GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Include ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <!-- Include ScrollMagic GSAP plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+</head>
+
+<body>
+  <!-- Background container -->
+  <div id="background"></div>
+
+
+  <!-- Animated and Centered Elements-->
+  <div id="centeredTitle">
+    <div>Shadows of Future Minds</div>
+    <div style="font-size: 1.6rem;">A Game Theoretic Approach to Novel Agent Emergence</div>
+  </div>
+
+  <div id="centeredText">
+    In the Foundation series, the clairvoyant Gaal is haunted by visions of her daughter's death at the hands of the Mule.
+  </div>
+
+
   
+
+  <div id="imageContainer">
+    <img jd='slide1' src="img/placeholder-image.jpg" alt="Image description">
+    <img src="img/placeholder-image.jpg" alt="Image description">
+    <img id='slide2' src="img/placeholder-image.jpg" alt="Image description">
+    <img src="img/placeholder-image.jpg" alt="Image description">
+    <img id='slide3' src="img/placeholder-image.jpg" alt="Image description">
+  </div>
+  
+
+  
+
+  <div class="scrollSpace"></div> <!-- Provides scroll space -->
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
