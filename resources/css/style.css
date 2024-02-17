@@ -7,7 +7,6 @@ body {
     align-items: center;
     font-family: 'Roboto', sans-serif;
     color: white !important;
-    overflow: hidden;
 }
 
 div {
@@ -56,8 +55,12 @@ div {
 }
 
 #introduction, #mot1, #mot2, #mot3, #introduction2 {
-    opacity: 0; /* Start titles and text as invisible */
+    opacity: 1; /* Start titles and text as invisible */
     font-size: 2rem;
+}
+
+#introduction {
+    opacity: 0;
 }
 
 #mot1, #mot3 {
