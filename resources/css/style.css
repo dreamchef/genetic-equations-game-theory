@@ -10,7 +10,7 @@ body {
     overflow: hidden;
 }
 
-#mainTitle, #secondTitle, #centeredText {
+#mainTitle, #secondTitle, #introduction {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -28,11 +28,11 @@ body {
 
 #secondTitle {
     opacity: 0;
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
 }
 
-#centeredText {
+#introduction {
     opacity: 0; /* Start titles and text as invisible */
     font-size: 2rem;
 }
@@ -56,13 +56,41 @@ body {
 }
 
 .spacer {
-    height: 25vh;
+    height: 15vh;
 }
 
-.spacer {
-    height: 80vh;
+.linger {
+    height: 60vh;
 }
 
 .slide {
     height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    align-items: stretch; /* Align items vertically */
+}
+
+.text-content {
+    flex: 1; /* Allows text content to grow and fill the available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text-content vertically */
+    padding-right: 20px; /* Space between text and image */
+}
+
+.image-content {
+    flex: 1; /* Allows image content to grow but can be limited by max-height of the image */
+    display: flex;
+    align-items: center; /* Center image vertically if it's not as tall as the container */
+    justify-content: center; /* Center image horizontally */
+}
+
+.image-content img {
+    max-height: 800px; /* Maximum height for the image */
+    max-width: 100%; /* Allows the image width to grow but not exceed its container */
+    object-fit: contain; /* Preserve aspect ratio */
+    height: auto; /* Adjust height automatically */
 }

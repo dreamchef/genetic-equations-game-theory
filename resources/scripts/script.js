@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         triggerElement: "#slide4", // trigger animation when this element is in view
         duration: "50%" // the animation will last for 50% of the viewport height
     })
-    .setTween("#centeredText", {opacity: 1}) // fade in the #centeredText element
+    .setTween("#introduction", {opacity: 1}) // fade in the #centeredText element
     .addTo(controller); // add the scene to the controller
 
 
