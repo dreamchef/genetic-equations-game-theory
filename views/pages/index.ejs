@@ -1,109 +1,107 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-
+  <head>
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
-  
     <link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
-
-
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Include Bootstrap CSS -->
+    <!-- Boostrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
-
-  
-    <!-- Include GSAP -->
+    <!-- Custom sheet-->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- GSAP and ScrollMagic -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <!-- Include ScrollMagic -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <!-- Include ScrollMagic GSAP plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-</head>
+    <!-- Custom Animations Script -->
+    <script src="scripts/script.js"></script>
+  </head>
 
-<body>
-  <!-- Background container -->
-  <div id="background"></div>
+  <body>
+    <div id="background"></div>
 
-  <!-- Animated and Centered Elements-->
-  <div id="mainTitle" class="animatedBlock">
-    Shadows of Future Minds
-    <div style="font-size: 3.5rem;">
-      A Game Theoretic Approach to Novel Agent Emergence
-    </div>
-    <div style="font-size: 2rem;">
-      By Dani Lisle
-    </div>
-    
-    <div style="text-align: center; font-size: 2rem;">
-      <div>.</div>
-      <div>.</div>
-      <div>.</div>
-    </div>
-  </div>
 
-  <div id='introduction' class="container animatedBlock">
-    <div class="row align-items-stretch">
+    <!--  Start of Animated Content -->
+    <div id="mainTitle" class="animatedBlock">
+      Shadows of Future Minds
+      <div style="font-size: 3.5rem;">
+        A Game Theoretic Approach to Novel Agent Emergence
+      </div>
+      <div style="font-size: 2rem;">
+        By Dani Lisle
+      </div>
+      <div style="text-align: center; font-size: 2rem;">
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+      </div>
+    </div>
+
+
+
+    <div id='introduction' class="container animatedBlock">
+      <div class="row align-items-stretch">
         <div class="col-md-9 text-content d-flex align-items-center">
           <p>In the <i>Foundation</i> series, the clairvoyant Gaal is haunted by visions of her daughter’s death at the hands of the Mule - a warlord living one-hundred years in the future. In the present, Gaal strives to tilt the odds in her favor and render this future impossible<sup>1</sup>.</p>
         </div>
         <div class="col-md-3 image-content">
-            <img src="img/placeholder-image.jpg" alt="Descriptive Alt Text">
+          <img src="img/placeholder-image.jpg" alt="Descriptive Alt Text">
         </div>
+      </div>
     </div>
-  </div>
 
-  <div id='introduction2' class="container animatedBlock">
-    <div id='motiv1' class="row align-items-stretch">
-      <div class="col-md-3 image-content">
-        <img src="img/orgchart.webp" alt="Descriptive Alt Text">
+
+
+    <div id='introduction2' class="container animatedBlock">
+      <div id='motiv1' class="row align-items-stretch">
+        <div class="col-md-3 image-content">
+          <img src="img/orgchart.webp" alt="Descriptive Alt Text">
+        </div>
+        <div class="col-md-9 text-content d-flex align-items-center">
+          <p>Outside of science fiction, the concepts of dueling against a future opponent or cooperating with a future ally are no less compelling. In a sense, they are as much part of the game as we are, and failing to be prepared for them has consequences far beyond fiction and thought experiments. Geopolitical decision-making and large-scale technological integration strategy are at stake.</p>
+        </div>
       </div>
-      <div class="col-md-9 text-content d-flex align-items-center">
-        <p>Outside of science fiction, the concepts of dueling against a future opponent or cooperating with a future ally are no less compelling. In a sense, they are as much part of the game as we are, and failing to be prepared for them has consequences far beyond fiction and thought experiments. Geopolitical decision-making and large-scale technological integration strategy are at stake.</p>
-      </div>
-    </div>
-    <div id='motiv2' class="row align-items-stretch">
-      <div class="col-md-9 text-content d-flex align-items-center">
-        <p>Various changing global conditions are accelerating the birth rate of new player forms in a variety of economic games. In order to meet objectives such as the UN-prescribed 70 percent increase in food production or the integration of resource feedback loops<sup>4</sup>, governments are likely to restructure internally while forming and revising alliances<sup>6</sup> leading to new decision-making dynamics across the globe.</p>  
-      </div>
-      <div class="col-md-3 image-content">
+
+      <div id='motiv2' class="row align-items-stretch">
+        <div class="col-md-9 text-content d-flex align-items-center">
+          <p>Various changing global conditions are accelerating the birth rate of new player forms in a variety of economic games. In order to meet objectives such as the UN-prescribed 70 percent increase in food production or the integration of resource feedback loops<sup>4</sup>, governments are likely to restructure internally while forming and revising alliances<sup>6</sup> leading to new decision-making dynamics across the globe.</p>  
+        </div>
+        <div class="col-md-3 image-content">
           <img src="img/diplomacy.webp" alt="Descriptive Alt Text">
+        </div>
+      </div>
+
+      <div id='motiv3' class="row align-items-stretch">
+        <div class="col-md-3 image-content">
+          <img src="img/interface.webp" alt="Descriptive Alt Text">
+        </div>
+        <div class="col-md-9 text-content d-flex align-items-center">
+          <p>Across the board, collaboration between human and machine and competition dynamics are changing and artificial intelligence is leading to more frequent partnerships between academic entities, corporations, and governments<sup>7</sup>. Deloitte projects the increased popularity of decentralized, network-based organizational schemas<sup>8</sup>. The runaway growth of technology in the artificial intelligence space necessitates the emergence of new player forms.</p>
+        </div>
       </div>
     </div>
-    <div id='motiv3' class="row align-items-stretch">
-      <div class="col-md-3 image-content">
-        <img src="img/interface.webp" alt="Descriptive Alt Text">
-      </div>
-      <div class="col-md-9 text-content d-flex align-items-center">
-        <p>Across the board, collaboration between human and machine and competition dynamics are changing and artificial intelligence is leading to more frequent partnerships between academic entities, corporations, and governments<sup>7</sup>. Deloitte projects the increased popularity of decentralized, network-based organizational schemas<sup>8</sup>. The runaway growth of technology in the artificial intelligence space necessitates the emergence of new player forms.</p>
-      </div>
+    <!--  End of Animated Content -->
+
+
+    
+    <!-- Triggers for Animations -->
+    <div id="imageContainer">
+      <div class="slide"></div>
+      <div class="spacer"></div> 
+      <div class="slide" id='slide2' ></div>
+      <div class="spacer"></div> 
+      <div class="slide" id='slide3' ></div>
+      <div class="spacer"></div> 
+      <div class="slide" id='slide4' ></div>
+      <div class="spacer"></div> 
+      <div class="slide" id='slide5' ></div>
+      <div class="spacer"></div> 
+      <div class="slide" id='slide6' ></div>
+      <div class="spacer"></div> 
+      <div class="slide" id='slide7' ></div>
     </div>
-  </div>
-
-  <div id="imageContainer">
-    <div class="slide"></div>
-    <div class="spacer"></div> 
-    <div class="slide" id='slide2' ></div>
-    <div class="spacer"></div> 
-    <div class="slide" id='slide3' ></div>
-    <div class="spacer"></div> 
-    <div class="slide" id='slide4' ></div>
-    <div class="spacer"></div> 
-    <div class="slide" id='slide5' ></div>
-    <div class="spacer"></div> 
-    <div class="slide" id='slide6' ></div>
-    <div class="spacer"></div> 
-    <div class="slide" id='slide7' ></div>
-  </div>
-
-
-  <div class="scrollSpace"></div> <!-- Provides scroll space -->
-
-  <script src="scripts/script.js"></script>
-</body>
+    
+  </body>
 
 </html>
