@@ -1,78 +1,35 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Roboto', sans-serif;
+    font-size: 2rem !important;
     color: white !important;
 }
 
-div {
-    margin-top: 0; /* Removes the top margin from paragraphs */
-    margin-bottom: 0px; /* Reduces the bottom margin, adjust value as needed */
-    padding: 0; /* Removes padding from paragraphs if any */
-}
 
-/* Remove vertical spacing from all columns in a row */
-.row > [class*="col-"] {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  
-  /* Reduce vertical margin for all direct children of a container */
-  .container > * {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  /* Specifically target paragraph spacing */
-  .container > .text-content > p {
-    margin-bottom: 0; /* Adjust as needed */
-  }
 
-#mainTitle, #secondTitle, #introduction, #mot1, #mot2, #mot3, #introduction2 {
+.animatedBlock {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+
+
 #mainTitle {
     opacity: 1;
-}
-
-.centeredTitle {
-    font-size: 10rem; /* Larger font size for the main title */
+    font-size: 10rem;
     text-align: right;
 }
 
-#secondTitle {
-    opacity: 0;
-    font-size: 4rem;
-    text-align: center;
-}
 
-#introduction, #mot1, #mot2, #mot3, #introduction2 {
-    opacity: 1; /* Start titles and text as invisible */
-    font-size: 2rem;
-}
 
 #introduction {
     opacity: 0;
 }
 
-#mot1, #mot3 {
-    transform: translate(-100%, -50%); /* Start the element off the left side of the screen */
-}
-
-#mot2 {
-    transform: translate(100%, -50%);
-}
 
 
-#mot1, #mot2, #mot3 {
+#introduction2 {
     opacity: 1;
 }
 
@@ -86,11 +43,6 @@ div {
 }
 
 
-.subtitle {
-    font-size: 1.7rem;
-    opacity: 1;
-    text-align: right;
-}
 
 #background {
     position: fixed;
@@ -98,9 +50,11 @@ div {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black; /* Final background color */
-    opacity: 0; /* Start as transparent */
+    background-color: black;
+    opacity: 0;
 }
+
+
 
 .spacer {
     height: 1vh;
@@ -115,16 +69,15 @@ div {
 }
 
 .text-content {
-    padding-right: 20px; /* Add some space between text and image */
+    padding-right: 20px;
 }
 
-/* Bootstrap's 'img-fluid' class makes the image responsive */
 .image-content img {
-    object-fit: contain; /* To maintain the aspect ratio */
-    width: 100%; /* Full width of the container */
+    object-fit: contain;
+    width: 100%;
 }
 
 .scaled {
-    width: 50%; /* Adjust as needed */
+    width: 50%;
     height: auto;
 }
