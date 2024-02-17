@@ -5,23 +5,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
     overflow: hidden;
 }
 
-#centeredTitle, #centeredText {
+#mainTitle, #secondTitle, #centeredText {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
-    opacity: 0; /* Start titles and text as invisible */
 }
 
-#centeredTitle {
-    font-size: 4rem; /* Larger font size for the main title */
+#mainTitle {
     opacity: 1;
+}
+
+.centeredTitle {
+    font-size: 10rem; /* Larger font size for the main title */
+    text-align: right;
+}
+
+#secondTitle {
+    opacity: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#centeredText {
+    opacity: 0; /* Start titles and text as invisible */
+    font-size: 2rem;
+}
+
+
+
+.subtitle {
+    font-size: 1.7rem;
+    opacity: 1;
+    text-align: right;
 }
 
 #background {
@@ -36,6 +57,10 @@ body {
 
 .spacer {
     height: 25vh;
+}
+
+.spacer {
+    height: 80vh;
 }
 
 .slide {
