@@ -8,23 +8,24 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .setTween("#mainTitle", {opacity: 0}) // fade out the #centeredTitle element
     .addTo(controller); // add the scene to the controller
-
-
-    // Fade in #secondTitle as you continue to scroll down
+    
+    // Fade in #centeredText as you continue to scroll down
     new ScrollMagic.Scene({
         triggerElement: "#slide2", // trigger animation when this element is in view
         duration: "50%" // the animation will last for 50% of the viewport height
     })
-    .setTween("#secondTitle", {opacity: 1}) // fade in the #centeredText element
+    .setTween("#introduction", {opacity: 1}) // fade in the #centeredText element
     .addTo(controller); // add the scene to the controller
 
-    // Fade out #secondTitle as you continue to scroll down
+    // Fade out #centeredText as you continue to scroll down
     new ScrollMagic.Scene({
         triggerElement: "#slide3", // trigger animation when this element is in view
         duration: "50%" // the animation will last for 50% of the viewport height
     })
-    .setTween("#secondTitle", {opacity: 0}) // fade in the #centeredText element
+    .setTween("#introduction", {opacity: 0}) // fade in the #centeredText element
     .addTo(controller); // add the scene to the controller
+
+
 
 
     // Fade in #centeredText as you continue to scroll down
@@ -32,9 +33,44 @@ document.addEventListener('DOMContentLoaded', function() {
         triggerElement: "#slide4", // trigger animation when this element is in view
         duration: "50%" // the animation will last for 50% of the viewport height
     })
-    .setTween("#introduction", {opacity: 1}) // fade in the #centeredText element
+    .setTween("#introduction2", {opacity: 1}) // fade in the #centeredText element
     .addTo(controller); // add the scene to the controller
 
+    // Fade out #centeredText as you continue to scroll down
+    new ScrollMagic.Scene({
+        triggerElement: "#slide4", // trigger animation when this element is in view
+        duration: "50%" // the animation will last for 50% of the viewport height
+    })
+    .setTween(gsap.to('#motiv1', 2, {x: '0%'})) // Use GSAP to animate the element sliding in from the left
+    .addTo(controller); // Add the scene to the controller
+
+    // Fade out #centeredText as you continue to scroll down
+    new ScrollMagic.Scene({
+        triggerElement: "#slide5", // trigger animation when this element is in view
+        duration: "50%" // the animation will last for 50% of the viewport height
+    })
+    .setTween(gsap.to('#motiv2', 2, {x: '0%'})) // Use GSAP to animate the element sliding in from the left
+    .addTo(controller); // Add the scene to the controller
+
+    // Fade out #centeredText as you continue to scroll down
+    new ScrollMagic.Scene({
+        triggerElement: "#slide6", // trigger animation when this element is in view
+        duration: "50%" // the animation will last for 50% of the viewport height
+    })
+    .setTween(gsap.to('#motiv3', 2, {x: '0%'})) // Use GSAP to animate the element sliding in from the left
+    .addTo(controller); // Add the scene to the controller
+
+
+
+    // Fade out #centeredText as you continue to scroll down
+    new ScrollMagic.Scene({
+        triggerElement: "#slide7", // trigger animation when this element is in view
+        duration: "50%" // the animation will last for 50% of the viewport height
+    })
+    .setTween("#introduction2", {opacity: 0}) // fade in the #centeredText element
+    .addTo(controller); // add the scene to the controller
+
+    
 
 
 

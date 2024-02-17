@@ -6,11 +6,34 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: white !important;
     overflow: hidden;
 }
 
-#mainTitle, #secondTitle, #introduction {
+div {
+    margin-top: 0; /* Removes the top margin from paragraphs */
+    margin-bottom: 0px; /* Reduces the bottom margin, adjust value as needed */
+    padding: 0; /* Removes padding from paragraphs if any */
+}
+
+/* Remove vertical spacing from all columns in a row */
+.row > [class*="col-"] {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  /* Reduce vertical margin for all direct children of a container */
+  .container > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  /* Specifically target paragraph spacing */
+  .container > .text-content > p {
+    margin-bottom: 0; /* Adjust as needed */
+  }
+
+#mainTitle, #secondTitle, #introduction, #mot1, #mot2, #mot3, #introduction2 {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -32,11 +55,32 @@ body {
     text-align: center;
 }
 
-#introduction {
+#introduction, #mot1, #mot2, #mot3, #introduction2 {
     opacity: 0; /* Start titles and text as invisible */
     font-size: 2rem;
 }
 
+#mot1, #mot3 {
+    transform: translate(-100%, -50%); /* Start the element off the left side of the screen */
+}
+
+#mot2 {
+    transform: translate(100%, -50%);
+}
+
+
+#mot1, #mot2, #mot3 {
+    opacity: 1;
+}
+
+#motiv1, #motiv3 {
+    transform: translate(200%, 0%);
+}
+
+#motiv2 {
+    transform: translate(-200%, 0%);
+
+}
 
 
 .subtitle {
@@ -56,7 +100,7 @@ body {
 }
 
 .spacer {
-    height: 15vh;
+    height: 1vh;
 }
 
 .linger {
@@ -67,30 +111,17 @@ body {
     height: 100vh;
 }
 
-
-.container {
-    display: flex;
-    align-items: stretch; /* Align items vertically */
-}
-
 .text-content {
-    flex: 1; /* Allows text content to grow and fill the available space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center text-content vertically */
-    padding-right: 20px; /* Space between text and image */
+    padding-right: 20px; /* Add some space between text and image */
 }
 
-.image-content {
-    flex: 1; /* Allows image content to grow but can be limited by max-height of the image */
-    display: flex;
-    align-items: center; /* Center image vertically if it's not as tall as the container */
-    justify-content: center; /* Center image horizontally */
-}
-
+/* Bootstrap's 'img-fluid' class makes the image responsive */
 .image-content img {
-    max-height: 800px; /* Maximum height for the image */
-    max-width: 100%; /* Allows the image width to grow but not exceed its container */
-    object-fit: contain; /* Preserve aspect ratio */
-    height: auto; /* Adjust height automatically */
+    object-fit: contain; /* To maintain the aspect ratio */
+    width: 100%; /* Full width of the container */
+}
+
+.scaled {
+    width: 50%; /* Adjust as needed */
+    height: auto;
 }
